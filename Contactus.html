@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Turkish Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f93f32;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #f07d69 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#contact {
+            padding: 30px;
+            background: #eaeaea;
+        }
+        .contact-info, .contact-form {
+            width: 48%;
+            float: left;
+            margin: 1%;
+        }
+        .contact-info h2, .contact-form h2 {
+            margin-top: 0;
+        }
+        footer {
+            background: #6f4e37;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Turkish Delight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Sector 15, Panchkula</p>
+                <p><strong>Phone:</strong> +91 9501361520</p>
+                <p><strong>Email:</strong> turkisheqisitecuisine@gmail.com</p>
+                <p><strong>Business Hours:</strong> Mon-Sun: 7am - 9pm</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="contact_process.php" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Turkish Delight &copy; 2024</p>
+    </footer>
+</body>
+</html>
